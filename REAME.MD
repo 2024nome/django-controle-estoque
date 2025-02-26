@@ -43,7 +43,7 @@ Descrição: processo para a criação de projeto
 -Faz as migrações dos models
 > python manage.py makemigrations
 - Aplica as migrações no banco de dados
-> python manage.pt migrate
+> python manage.py migrate
 
 10.criar o Super Usuario
 >python manage.py createsuperuser
