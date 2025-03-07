@@ -11,11 +11,16 @@
         "Fornecedor",
         "fornecedore",
         "fornecedores",
+        "LISTA",
+        "mundo",
         "nomes",
         "preco",
+        "preço",
+        "primeiro",
         "produto",
         "produtos",
         "Quantida",
-        "quantidade"
+        "quantidade",
+        "theader"
     ]
 }

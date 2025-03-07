@@ -1,3 +1,10 @@
 from django.shortcuts import render
+from django.views.generic import ListView
 
-# Create your views here.
+#class home(ListView):
+#    template_name='home.html'
+
+
+def index(request):
+    return render(request, 'produtos/produtos.html')
+

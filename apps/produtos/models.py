@@ -1,6 +1,7 @@
 from django.db import models
 
 
+
 class Categoria(models.Model):
     nome = models.CharField(verbose_name='Categoria', blank= False, null=False, max_length=100)
 
@@ -10,8 +11,7 @@ class meta:
     db_table = 'categoria' 
 
 def __str__ (self):
-    return self.nome
-
+    return self.no
 class Fornecedor(models.Model):
     nome =  models.CharField ( verbose_name='Nome Fantasia', max_length=150,  blank=False, null=False )
     contato = models.CharField ( verbose_name='Contato', max_length=20,  blank=False, null=False)
