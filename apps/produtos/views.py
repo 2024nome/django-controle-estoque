@@ -1,10 +1,9 @@
 from django.shortcuts import render
 from django.views.generic import ListView
-
-#class home(ListView):
-#    template_name='home.html'
-
-
-def index(request):
-    return render(request, 'produtos/produtos.html')
+from produtos.models import produtos
+class ProdutoListView(ListView):
+    model = produtos
+    template_name = 'produtos/produtos.html'
+    context_object_name = 'produtos'
+    paginate_by = 10
 

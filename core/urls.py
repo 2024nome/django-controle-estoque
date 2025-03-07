@@ -5,6 +5,7 @@ from apps.produtos.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index)
+    path('', ProdutoListView.as_View(),
+        name='produtos-Lista')
     
 ]
