@@ -4,6 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        :root{
+            --texto: #0000;
+            --fundo: #696969;
+            --extra: #C0C0C0;
+            --ex_texto: #ffffff;
+        }
+        
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+    & th, td{
+        border: 1 solid var(--fundo);
+        padding: 8px;
+        text-align: center;
+    }
+
+    td{
+        text-align: center;
+    }
+
+    & th{
+        background-color: var(--extra);
+        color: var(--ex_texto);
+    }
+
+    h1{
+        color: var(--fundo);
+        text-align: center;
+    }
+
+    *{
+            font-family: 'Times New Roman', Times, serif;
+    }
+
+
+
+        
+    </style>
 </head>
 <body>
     <h1>LISTA DE PRODUTOS</h1>
@@ -14,20 +56,27 @@
             <th>Nome</th>
             <th>Descricao</th>
             <th>preço</th>
-            <th>Qtd. Estoque</th>
+            <th>Qtd.Estoque</th>
             <th>Categoria</th>
             <th>Fornecedor</th>
         </thead>
 
         <tbody>
+
+            {% for produto in produto %}
+
             <tr>
-                <td>{{produtos}}</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>{{produtos.id}}</td>
+                <td>{{produto.Nome}}</td>
+                <td>{{produto.Descricao}}</td>
+                <td>{{produto.preço}}</td>
+                <td>{{produto.Qtd.Estoque}}</td>
+                <td>{{produto.Categoria}}</td>
+                <td>{{produto.Fornecedor}}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td colspan="7">Nenhum produto Encotrado</td>
             </tr>
         </tbody>
 
