@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        :root{
-            --texto: #0000;
-            --fundo: #696969;
-            --extra: #C0C0C0;
-            --ex_texto: #ffffff;
-        }
+
         
         table{
             width: 100%;
@@ -66,7 +61,7 @@
             {% for produto in produto %}
 
             <tr>
-                <td>{{produtos.id}}</td>
+                <td>{{produto.id}}</td>
                 <td>{{produto.Nome}}</td>
                 <td>{{produto.Descricao}}</td>
                 <td>{{produto.preço}}</td>

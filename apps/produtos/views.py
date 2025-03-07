@@ -9,8 +9,8 @@ class ProdutoListView(ListView):
     context_object_name = 'produtos'
     paginate_by = 10
 
-class ProdutoscreateView(ListView):
+class ProdutosCreateView(CreateView):
     model = Produtos
     fields = ['nome', 'descricao', 'preco', 'quantidadeEstoque', 'categoria', 'fornecedor']
-    template_name = 'produtos/produto_create.html'
+    template_name = 'produtos/produto_create_update.html'
     sucess_url=reverse_lazy('produtos')
