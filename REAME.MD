@@ -60,5 +60,7 @@ Descrição: processo para a criação de projeto
 > Adicionar formulários, autenticação de usuários, e muito mais.
 
 
-13: startar o servidor de desevolvimento
+13. start o servidor de desevolvimento
 > python manage.py runserver
+
+14. instalação da 

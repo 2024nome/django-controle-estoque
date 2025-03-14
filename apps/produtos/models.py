@@ -35,8 +35,6 @@ class Produtos(models.Model):
     quantidadeEstoque = models.PositiveBigIntegerField (verbose_name='Quantidade', default=0)
     categoria = models.ForeignKey (Categoria, on_delete=models.PROTECT)
     fornecedor = models.ForeignKey (Fornecedor, on_delete=models.PROTECT)
-
-
     usuario = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     imagem = models.ImageField(null=True, blank=True, default='/images/placeholder.png')
     marca = models.CharField(max_length=200, null=True, blank=True)
