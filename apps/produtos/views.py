@@ -11,6 +11,6 @@ class ProdutoListView(ListView):
 
 class ProdutosCreateView(CreateView):
     model = Produtos
-    fields = ['nome', 'descricao', 'preco', 'quantidadeEstoque', 'categoria', 'fornecedor']
+    fields = ['nome','marca','descricao', 'preco', 'quantidadeEstoque', 'categoria', 'fornecedor', 'imagem']
     template_name = 'produtos/produto_create_update.html'
-    sucess_url=reverse_lazy('produtos')
+    sucess_url = reverse_lazy('produtos')

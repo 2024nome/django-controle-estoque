@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <form action="" method="post"></form>
-    {% csrf_token %}
-    {{ from.as_p }}
+    <form action="" method="post">
+        <fieldset label="formulario">
+            <legend>FORMULARIO DE ADICIONAR PRODUTOS</legend>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="enviar">
+            <input type="date" name="" id="">
+        </fieldset>
+
+
+
+    </form>
+
 </body>
+
 </html>
